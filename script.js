@@ -71,3 +71,50 @@ function expanedMenu() {
 const hamburgerButton = document
   .querySelector('.hamburger')
   .addEventListener('click', collaplseSidebar)
+
+// --------------------------------------------------------------
+// Function to smoothly scroll to a specific section
+function smoothScrollTo(element, duration) {
+  var startingY = window.scrollY
+  var elementY = window.scrollY + element.getBoundingClientRect().top
+  var targetY =
+    document.body.scrollHeight - elementY < window.innerHeight
+      ? document.body.scrollHeight - window.innerHeight
+      : elementY
+  var diff = targetY - startingY
+  var easing = function (t) {
+    return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
+  }
+  var start
+
+  if (!diff) return
+
+  // Bootstrap our animation - it will get called right before next frame shall be rendered.
+  window.requestAnimationFrame(function step(timestamp) {
+    if (!start) start = timestamp
+    // Elapsed milliseconds since start of scrolling.
+    var time = timestamp - start
+    // Get percent of completion in range [0, 1].
+    var percent = Math.min(time / duration, 1)
+    // Apply the easing.
+    // It can cause bad-looking slow frames in browser performance tool, so be careful.
+    percent = easing(percent)
+
+    window.scrollTo(0, startingY + diff * percent)
+
+    // Proceed with animation as long as we wanted it to.
+    if (time < duration) {
+      window.requestAnimationFrame(step)
+    }
+  })
+}
+
+// Add click event to sidebar links
+document.querySelectorAll('.sidebar-menu__item').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault()
+    const targetId = this.getAttribute('href').substring(1)
+    const targetSection = document.getElementById(targetId)
+    smoothScrollTo(targetSection, 500)
+  })
+})
