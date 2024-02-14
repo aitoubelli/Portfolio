@@ -8,24 +8,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Source+Sans+Pro:wght@400&display=swap"
+      rel="stylesheet"
+    />
     <title>John Doe | Junior Full-Stack Web Developer</title>
   </head>
   <body>
     <aside class="sidebar">
       <!-- Sidebar Header -->
       <div class="sidebar-header">
-        <div class="hamburger">
-          <div class="hamburger-line top"></div>
-          <div class="hamburger-line middle"></div>
-          <div class="hamburger-line bottom"></div>
-        </div>
+        <div class="hamburger dock-to-right"><i class="fas fa-times"></i></div>
         <img
           src="https://via.placeholder.com/150"
           alt="User avatar"
           class="sidebar__avatar"
         />
-        <h2 class="sidebar__name">John Doe</h2>
-        <p class="sidebar__title">Web Developer</p>
+        <h2 class="sidebar__name">AITOUBELLI</h2>
+        <p class="sidebar__title">Junior Developer</p>
       </div>
 
       <!-- Sidebar Menu -->
@@ -48,7 +48,7 @@
         <a href="#blog" class="sidebar-menu__item">
           <i class="fas fa-blog"></i> Blog
         </a>
-        <a href="#contact-me" class="sidebar-menu__item">
+        <a href="#contact" class="sidebar-menu__item">
           <i class="fas fa-envelope"></i> Contact Me
         </a>
       </nav>
@@ -75,24 +75,204 @@
       <section class="home-section" id="home">
         <div class="info">
           <h1 class="welcome">Hello & Welcome!</h1>
-          <p class="intro">I'm <strong>John Doe</strong>,</p>
+          <p class="intro">I'm <strong>AITOUBELLI Salah</strong>,</p>
           <p class="about">
-            As a dedicated <strong>Junior Full-Stack Web Developer</strong>, I
-            blend front-end creativity with back-end functionality to build
+            As a dedicated
+            <strong id="typing-effect"></strong>
+          </br></br>I blend front-end creativity with back-end functionality to build
             seamless web solutions.
           </p>
+          </br>
           <p class="philosophy">
             Driven by curiosity and innovation, I strive to transform ideas into
             impactful web applications that enhance user experiences.
           </p>
           <button id="cta-button" class="cta-button">Download CV</button>
         </div>
-        <div class="illustration">
-          <img src="resources/illustration.webp" alt="" />
-        </div>
+        <div class="home-illustration"></div>
       </section>
       <section id="about-me" class="about-me">
-        <h1 class="home__title">About me</h1>
+        <div class="about-me__content">
+          <h1 class="home__title">About Me</h1>
+          <p>
+            Currently, I'm a third-year student at the University of Upper
+            Alsace, where I'm immersed in an engaging and challenging academic
+            environment. My journey through higher education has been marked by
+            a deep commitment to learning and personal growth, both inside and
+            outside the classroom.
+          </p>
+          <p>
+            Throughout my time at the university, I've had the opportunity to
+            work on various academic and personal projects, ranging from complex
+            web applications using modern technologies to simple yet insightful
+            console games that reinforce fundamental programming concepts. My
+            diverse project portfolio, which includes front-end applications,
+            server-side solutions, and full-stack projects, is a testament to my
+            adaptability and eagerness to embrace new challenges.
+          </p>
+          <p>
+            Beyond my academic pursuits, I'm an active participant in the tech
+            community, regularly updating my GitHub with projects that showcase
+            my skills across different domains, including game development with
+            classic titles like Snake and Tetris in JavaScript. This hands-on
+            approach to learning has significantly enhanced my problem-solving
+            skills and has kept me at the forefront of emerging technologies.
+          </p>
+          <p>
+            I'm passionate about leveraging technology to create impactful
+            solutions and am always on the lookout for opportunities to apply my
+            knowledge in practical, real-world settings.
+          </p>
+        </div>
+        <div class="about-me-illustration"></div>
+      </section>
+      <section id="education" class="education">
+        <h2 class="section__title">Education</h2>
+        <div class="education__list">
+          <div class="education__item">
+            <h3 class="education__degree">
+              Bachelor's Degree in Computer Science
+            </h3>
+            <p class="education__school">University of Upper Alsace, France</p>
+            <p class="education__years">2021 - Present</p>
+            <p class="education__details">
+              Currently in my third year, focusing on software development, data
+              structures, algorithms, and web technologies. Engaged in several
+              projects that allowed me to apply theoretical knowledge in
+              practical scenarios, enhancing my technical skills and
+              understanding of complex concepts.
+            </p>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__container">
+          <div class="skills__category">
+            <h3 class="skills__category-title">Programming Languages</h3>
+            <ul class="skills__list">
+              <li class="skills__item">C++</li>
+              <li class="skills__item">JavaScript</li>
+              <li class="skills__item">HTML & CSS</li>
+              <!-- Add more programming languages here -->
+            </ul>
+          </div>
+          <div class="skills__category">
+            <h3 class="skills__category-title">Frameworks & Libraries</h3>
+            <ul class="skills__list">
+              <li class="skills__item">React</li>
+              <li class="skills__item">Node.js</li>
+              <!-- Add more frameworks and libraries here -->
+            </ul>
+          </div>
+          <div class="skills__category">
+            <h3 class="skills__category-title">Tools & Technologies</h3>
+            <ul class="skills__list">
+              <li class="skills__item">Git & GitHub</li>
+              <li class="skills__item">Webpack</li>
+              <!-- Add more tools and technologies here -->
+            </ul>
+          </div>
+          <div class="skills__category">
+            <h3 class="skills__category-title">Concepts</h3>
+            <ul class="skills__list">
+              <li class="skills__item">Object-Oriented Programming (OOP)</li>
+              <li class="skills__item">Data Structures & Algorithms</li>
+              <!-- Add more concepts here -->
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="experience">
+        <h2 class="section__title">Professional Experience</h2>
+        <div class="experience__list">
+          <div class="experience__item">
+            <h3 class="experience__position">Software Developer Intern</h3>
+            <p class="experience__company">Tech Solutions Inc., Paris</p>
+            <p class="experience__dates">June 2023 - August 2023</p>
+            <ul class="experience__details">
+              <li>
+                Developed and maintained web applications using JavaScript,
+                HTML, and CSS, improving user experience and functionality.
+              </li>
+              <li>
+                Collaborated with the development team to design and implement
+                new features, following Agile methodologies.
+              </li>
+              <li>
+                Conducted software testing and debugging, ensuring the
+                reliability and efficiency of applications.
+              </li>
+            </ul>
+          </div>
+          <!-- Add more experience items here if needed -->
+        </div>
+      </section>
+      <section id="blog" class="blog">
+        <h2 class="section__title">Blog</h2>
+        <div class="blog__container">
+          <article class="blog__post">
+            <h3 class="blog__post-title">The Future of Web Development</h3>
+            <p class="blog__post-date">Posted on January 15, 2024</p>
+            <p class="blog__post-summary">
+              Exploring the latest trends and technologies shaping the future of
+              web development, from AI-driven design to progressive web
+              applications.
+            </p>
+            <a href="link-to-full-article" class="blog__post-readmore"
+              >Read More</a
+            >
+          </article>
+          <article class="blog__post">
+            <h3 class="blog__post-title">
+              Understanding JavaScript Asynchronicity
+            </h3>
+            <p class="blog__post-date">Posted on February 20, 2024</p>
+            <p class="blog__post-summary">
+              A deep dive into asynchronous programming in JavaScript, covering
+              callbacks, promises, and async/await syntax to manage asynchronous
+              operations.
+            </p>
+            <a href="link-to-full-article" class="blog__post-readmore"
+              >Read More</a
+            >
+          </article>
+          <!-- Add more blog posts here -->
+        </div>
+        <a href="blog.html" class="more-blogs">More Blogs</a>
+      </section>
+      <section id="contact" class="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <p class="contact__intro">
+          If you have any questions, project ideas, or just want to say hello,
+          feel free to get in touch with me.
+        </p>
+        <div class="contact__details">
+          <p>
+            Email:
+            <a href="mailto:ait.medsalah@gmail.com">ait.medsalah@gmail.com</a>
+          </p>
+          <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/aitoubelli" target="_blank"
+              >aitoubelli</a
+            >
+          </p>
+          <!-- More contact options here if needed -->
+        </div>
+        <form action="your-server-endpoint" method="POST" class="contact__form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="contact__submit">Send Message</button>
+        </form>
       </section>
     </main>
     <script src="script.js"></script>

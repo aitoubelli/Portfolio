@@ -27,6 +27,8 @@ function collaplseSidebar() {
   const sidebar = document.querySelector('.sidebar')
   sidebar.classList.toggle('collapsed')
 
+  toggleBurgerIcon()
+
   const sidebarHeader = document.querySelector('.sidebar-header')
   const children = [...sidebarHeader.children]
   const childrenToHide = children.slice(1)
@@ -66,6 +68,19 @@ function expanedMenu() {
     item.classList.remove('collapsed-item')
     item.firstElementChild.classList.add('collapsed-icon')
   })
+}
+
+function toggleBurgerIcon() {
+  const hamburger = document.querySelector('.hamburger')
+  const sidebarIcon = document.querySelector('.hamburger i')
+  hamburger.classList.toggle('dock-to-right')
+  if (sidebarIcon.classList.contains('fa-bars')) {
+    sidebarIcon.classList.remove('fa-bars')
+    sidebarIcon.classList.add('fa-times')
+  } else {
+    sidebarIcon.classList.remove('fa-times')
+    sidebarIcon.classList.add('fa-bars')
+  }
 }
 
 const hamburgerButton = document
@@ -118,3 +133,39 @@ document.querySelectorAll('.sidebar-menu__item').forEach(link => {
     smoothScrollTo(targetSection, 500)
   })
 })
+
+// --------------------------------------------------------------
+const phrases = ['Junior Full-Stack Web Developer']
+let currentPhrase = 0
+let currentLetter = 0
+let typingEffectElement = document.getElementById('typing-effect')
+let typingSpeed = 100 // in milliseconds
+let deletingSpeed = 50 // in milliseconds
+
+function typePhrase() {
+  if (currentLetter < phrases[currentPhrase].length) {
+    typingEffectElement.textContent +=
+      phrases[currentPhrase].charAt(currentLetter)
+    currentLetter++
+    setTimeout(typePhrase, typingSpeed)
+  } else {
+    setTimeout(deletePhrase, 2000) // wait a bit before starting to delete
+  }
+}
+
+function deletePhrase() {
+  if (currentLetter > 0) {
+    typingEffectElement.textContent = phrases[currentPhrase].substring(
+      0,
+      currentLetter - 1
+    )
+    currentLetter--
+    setTimeout(deletePhrase, deletingSpeed)
+  } else {
+    currentPhrase = (currentPhrase + 1) % phrases.length // move to the next phrase
+    setTimeout(typePhrase, typingSpeed) // start typing the next phrase
+  }
+}
+
+typePhrase() // start the typing effect
+// --------------------------------------------------------------
