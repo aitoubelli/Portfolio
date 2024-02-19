@@ -193,8 +193,14 @@ function openCategory(categoryName) {
 // Initialize the "All" tab on load
 window.onload = function () {
   openCategory('all')
-  const allTab = document.getElementById('all-tab').classList.add('active')
+  document.getElementById('all-tab').classList.add('active')
 }
+function openLink() {
+  var url =
+    'https://drive.google.com/file/d/1Jjw-7yYb1nI71Dna4RV1oiK4kv22RQ-u/view'
+  window.open(url, '_blank').focus()
+}
+
 //
 particlesJS('particles-js', {
   particles: {

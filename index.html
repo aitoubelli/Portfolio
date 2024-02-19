@@ -91,7 +91,9 @@
             Driven by curiosity and innovation, I strive to transform ideas into
             impactful web applications that enhance user experiences.
           </p>
-          <button id="cta-button" class="cta-button">Download CV</button>
+          <button id="cta-button" class="cta-button" onclick="openLink()">
+            Download CV
+          </button>
         </div>
         <div class="home-illustration"></div>
       </section>
@@ -223,7 +225,6 @@
             </ul>
           </div>
 
-          <!-- Programming Languages -->
           <!-- Programming Languages -->
           <div class="skills__category all proglang">
             <h3 class="skills__category-title">Programming Languages</h3>
@@ -362,7 +363,7 @@
           </p>
           <!-- More contact options here if needed -->
         </div>
-        <form action="your-server-endpoint" method="POST" class="contact__form">
+        <form action="endpoint" method="POST" class="contact__form">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
