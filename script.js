@@ -169,6 +169,33 @@ function deletePhrase() {
 
 typePhrase() // start the typing effect
 // --------------------------------------------------------------
+function openCategory(categoryName) {
+  // Get all elements with class="skills__category" and hide them
+  var categories = document.getElementsByClassName('skills__category')
+  for (var i = 0; i < categories.length; i++) {
+    categories[i].classList.remove('active-category')
+  }
+
+  // Get all elements with class="tab-link" and remove the class "active"
+  var tabLinks = document.getElementsByClassName('tab-link')
+  for (var i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].className = tabLinks[i].className.replace(' active', '')
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  var activeCategories = document.getElementsByClassName(categoryName)
+  for (var i = 0; i < activeCategories.length; i++) {
+    activeCategories[i].classList.add('active-category')
+  }
+  event.currentTarget.className += ' active'
+}
+
+// Initialize the "All" tab on load
+window.onload = function () {
+  openCategory('all')
+  const allTab = document.getElementById('all-tab').classList.add('active')
+}
+//
 particlesJS('particles-js', {
   particles: {
     number: {
