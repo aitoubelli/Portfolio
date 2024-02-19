@@ -272,7 +272,8 @@ h6 {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
+  overflow-y: auto; /* Allows scrolling within the section */
   padding: 2rem;
 }
 
@@ -302,7 +303,7 @@ section {
   grid-column: 1;
   max-width: 550px;
   line-height: 1.6;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   margin-left: auto;
 }
 
@@ -453,6 +454,7 @@ section {
   color: var(--text-color);
   padding: 40px;
   text-align: left;
+  overflow-y: scroll;
 }
 
 .education__list {
