@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Source+Sans+Pro:wght@400&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>AIT OUBELLI | Software engineer and data enthusiast.</title>
   </head>
   <body>
@@ -27,6 +28,10 @@
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Source+Sans+Pro:wght@400&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
           rel="stylesheet"
         />
         <title data-i18n="pageTitle">
@@ -271,17 +276,35 @@
                 <h3
                   class="skills__category-title"
                   data-i18n="skillsFrontendTitle"
+                  data-aos="fade-right"
                 >
                   Frontend Development
                 </h3>
                 <ul class="skills__list">
-                  <li class="skills__item">HTML</li>
-                  <li class="skills__item">CSS</li>
-                  <li class="skills__item">JavaScript</li>
-                  <li class="skills__item">jQuery</li>
-                  <li class="skills__item">React</li>
-                  <li class="skills__item">Svelte</li>
-                  <li class="skills__item">TypeScript</li>
+                  <li class="skills__item" data-category="webdev frontend">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <span>HTML</span>
+                  </li>
+                  <li class="skills__item" data-category="webdev frontend">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <span>CSS</span>
+                  </li>
+                  <li class="skills__item" data-category="webdev frontend">
+                    <i class="fab fa-js-square skill-icon"></i>
+                    <span>JavaScript</span>
+                  </li>
+                  <li class="skills__item" data-category="webdev frontend">
+                    <i class="fab fa-react skill-icon"></i>
+                    <span>React</span>
+                  </li>
+                  <li class="skills__item" data-category="webdev frontend">
+                    <i class="fas fa-code skill-icon"></i>
+                    <span>Svelte</span>
+                  </li>
+                  <li class="skills__item" data-category="webdev frontend">
+                    <i class="fas fa-code skill-icon"></i>
+                    <span>TypeScript</span>
+                  </li>
                 </ul>
               </div>
 
@@ -290,13 +313,26 @@
                 <h3
                   class="skills__category-title"
                   data-i18n="skillsBackendTitle"
+                  data-aos="fade-left"
                 >
                   Backend Development
                 </h3>
                 <ul class="skills__list">
-                  <li class="skills__item">PHP</li>
-                  <li class="skills__item">Node.js</li>
-                  <li class="skills__item">Express</li>
+                  <li
+                    class="skills__item"
+                    data-category="webdev backend proglang"
+                  >
+                    <i class="fab fa-php skill-icon"></i>
+                    <span>PHP</span>
+                  </li>
+                  <li class="skills__item" data-category="webdev backend">
+                    <i class="fab fa-node-js skill-icon"></i>
+                    <span>Node.js</span>
+                  </li>
+                  <li class="skills__item" data-category="webdev backend">
+                    <i class="fas fa-server skill-icon"></i>
+                    <span>Express</span>
+                  </li>
                 </ul>
               </div>
 
@@ -305,13 +341,23 @@
                 <h3
                   class="skills__category-title"
                   data-i18n="skillsDatabasesTitle"
+                  data-aos="fade-right"
                 >
                   Databases
                 </h3>
                 <ul class="skills__list">
-                  <li class="skills__item">MySQL</li>
-                  <li class="skills__item">PostgreSQL</li>
-                  <li class="skills__item">MongoDB</li>
+                  <li class="skills__item" data-category="databases">
+                    <i class="fas fa-database skill-icon"></i>
+                    <span>MySQL</span>
+                  </li>
+                  <li class="skills__item" data-category="databases">
+                    <i class="fas fa-database skill-icon"></i>
+                    <span>PostgreSQL</span>
+                  </li>
+                  <li class="skills__item" data-category="databases">
+                    <i class="fas fa-database skill-icon"></i>
+                    <span>MongoDB</span>
+                  </li>
                 </ul>
               </div>
 
@@ -320,13 +366,23 @@
                 <h3
                   class="skills__category-title"
                   data-i18n="skillsProgLangTitle"
+                  data-aos="fade-left"
                 >
                   Programming Languages
                 </h3>
                 <ul class="skills__list">
-                  <li class="skills__item">Python</li>
-                  <li class="skills__item">C++</li>
-                  <li class="skills__item">Java</li>
+                  <li class="skills__item" data-category="proglang">
+                    <i class="fab fa-python skill-icon"></i>
+                    <span>Python</span>
+                  </li>
+                  <li class="skills__item" data-category="proglang">
+                    <i class="fas fa-file-code skill-icon"></i>
+                    <span>C++</span>
+                  </li>
+                  <li class="skills__item" data-category="proglang">
+                    <i class="fab fa-java skill-icon"></i>
+                    <span>Java</span>
+                  </li>
                 </ul>
               </div>
 
@@ -336,13 +392,34 @@
                   Tools & Technologies
                 </h3>
                 <ul class="skills__list">
-                  <li class="skills__item">Git</li>
-                  <li class="skills__item">Linux</li>
-                  <li class="skills__item">Google Cloud Platform</li>
-                  <li class="skills__item">VS Code</li>
-                  <li class="skills__item">Android Studio</li>
-                  <li class="skills__item">Eclipse</li>
-                  <li class="skills__item">PhpStorm</li>
+                  <li class="skills__item" data-category="tools">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <span>Git</span>
+                  </li>
+                  <li class="skills__item" data-category="tools">
+                    <i class="fab fa-linux skill-icon"></i>
+                    <span>Linux</span>
+                  </li>
+                  <li class="skills__item" data-category="tools">
+                    <i class="fab fa-google skill-icon"></i>
+                    <span>Google Cloud Platform</span>
+                  </li>
+                  <li class="skills__item" data-category="tools">
+                    <i class="fas fa-code skill-icon"></i>
+                    <span>VS Code</span>
+                  </li>
+                  <li class="skills__item" data-category="tools">
+                    <i class="fab fa-android skill-icon"></i>
+                    <span>Android Studio</span>
+                  </li>
+                  <li class="skills__item" data-category="tools">
+                    <i class="fas fa-eclipse skill-icon"></i>
+                    <span>Eclipse</span>
+                  </li>
+                  <li class="skills__item" data-category="tools">
+                    <i class="fas fa-code skill-icon"></i>
+                    <span>PhpStorm</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -520,6 +597,10 @@
           </section>
         </main>
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init()
+        </script>
         <script src="script.js"></script>
       </body>
     </html>
