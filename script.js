@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 function openLink() {
   var url =
-    'https://drive.google.com/file/d/1Jjw-7yYb1nI71Dna4RV1oiK4kv22RQ-u/view'
+    'https://drive.google.com/file/d/1bi9yW-4-q4fmMe380vGi7gwERvf2oAQj/view'
   window.open(url, '_blank').focus()
 }
 
