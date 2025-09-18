@@ -135,7 +135,7 @@ document.querySelectorAll('.sidebar-menu__item').forEach(link => {
 })
 
 // --------------------------------------------------------------
-const phrases = ['Junior Full-Stack Web Developer']
+const phrases = ['software engineer and data enthusiast']
 let currentPhrase = 0
 let currentLetter = 0
 let typingEffectElement = document.getElementById('typing-effect')

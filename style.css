@@ -1,3 +1,21 @@
+.maintenance-banner {
+  background-color: #ffcc00; /* Yellow background */
+  color: #333; /* Dark text */
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's on top of other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.maintenance-banner p {
+  margin: 0;
+}
+
 :root {
   --transition-duration: 0.3s;
   --transition-timing-function: ease;
