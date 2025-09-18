@@ -289,6 +289,30 @@ h6 {
   color: var(--accent-color);
 }
 
+.language-switcher {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.lang-button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.lang-button:hover,
+.lang-button.active {
+  background-color: var(--accent-color);
+}
+
 section {
   min-height: 100vh;
   overflow-y: auto; /* Allows scrolling within the section */

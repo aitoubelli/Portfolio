@@ -15,375 +15,511 @@
     <title>AIT OUBELLI | Software engineer and data enthusiast.</title>
   </head>
   <body>
-    <div class="maintenance-banner" id="maintenanceBanner">
-      <p>This site is currently under maintenance. We'll be back soon!</p>
-    </div>
-    <aside class="sidebar">
-      <!-- Sidebar Header -->
-      <div class="sidebar-header">
-        <div class="hamburger dock-to-right"><i class="fas fa-times"></i></div>
-        <div class="sidebar__avatar">
-          <img src="resources/pic.png" alt="User avatar" />
-        </div>
-        <h2 class="sidebar__name">AITOUBELLI</h2>
-        <p class="sidebar__title">Software engineer</p>
-      </div>
-
-      <!-- Sidebar Menu -->
-      <nav class="sidebar-menu">
-        <a href="#home" class="sidebar-menu__item">
-          <i class="fas fa-home"></i> Home
-        </a>
-        <a href="#about-me" class="sidebar-menu__item">
-          <i class="fas fa-user"></i> About Me
-        </a>
-        <a href="#education" class="sidebar-menu__item">
-          <i class="fas fa-graduation-cap"></i> Education
-        </a>
-        <a href="#skills" class="sidebar-menu__item">
-          <i class="fas fa-cogs"></i> Skills
-        </a>
-        <a href="#experience" class="sidebar-menu__item">
-          <i class="fas fa-briefcase"></i> Experience
-        </a>
-        <a href="#projects" class="sidebar-menu__item">
-          <i class="fas fa-project-diagram"></i> Projects
-        </a>
-        <a href="#blog" class="sidebar-menu__item">
-          <i class="fas fa-blog"></i> Blog
-        </a>
-        <a href="#contact" class="sidebar-menu__item">
-          <i class="fas fa-envelope"></i> Contact Me
-        </a>
-      </nav>
-
-      <!-- Sidebar Links -->
-      <div class="sidebar-links">
-        <a href="#" class="sidebar-links__link"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="#" class="sidebar-links__link"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="#" class="sidebar-links__link"
-          ><i class="fab fa-whatsapp"></i
-        ></a>
-      </div>
-    </aside>
-    <main class="content">
-      <header class="header">
-        <div class="toggle-mode">
-          <i class="fas fa-sun" id="toggle-button"></i>
-        </div>
-      </header>
-      <section class="home-section" id="home">
-        <div id="particles-js"></div>
-        <div class="info">
-          <h1 class="welcome">Hello & Welcome!</h1>
-          <p class="intro">I'm <strong>AITOUBELLI Salah</strong>,</p>
-          <p class="about">
-            As a dedicated
-            <strong id="typing-effect"></strong>
-            <br />
-            <br />
-            I blend front-end creativity with back-end functionality to build
-            seamless web solutions.
-          </p>
-          <br />
-          <p class="philosophy">
-            Driven by curiosity and innovation, I strive to transform ideas into
-            impactful web applications that enhance user experiences.
-          </p>
-          <button id="cta-button" class="cta-button" onclick="openLink()">
-            Download CV
-          </button>
-        </div>
-        <div class="home-illustration"></div>
-      </section>
-      <section id="about-me" class="about-me">
-        <div class="about-me__content">
-          <h1 class="home__title">About Me</h1>
-          <p>
-            Currently, I'm a third-year student at the University of Upper
-            Alsace, where I'm immersed in an engaging and challenging academic
-            environment. My journey through higher education has been marked by
-            a deep commitment to learning and personal growth, both inside and
-            outside the classroom.
-          </p>
-          <p>
-            Throughout my time at the university, I've had the opportunity to
-            work on various academic and personal projects, ranging from complex
-            web applications using modern technologies to simple yet insightful
-            console games that reinforce fundamental programming concepts. My
-            diverse project portfolio, which includes front-end applications,
-            server-side solutions, and full-stack projects, is a testament to my
-            adaptability and eagerness to embrace new challenges.
-          </p>
-          <p>
-            Beyond my academic pursuits, I'm an active participant in the tech
-            community, regularly updating my GitHub with projects that showcase
-            my skills across different domains, including game development with
-            classic titles like Snake and Tetris in JavaScript. This hands-on
-            approach to learning has significantly enhanced my problem-solving
-            skills and has kept me at the forefront of emerging technologies.
-          </p>
-          <p>
-            I'm passionate about leveraging technology to create impactful
-            solutions and am always on the lookout for opportunities to apply my
-            knowledge in practical, real-world settings.
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Source+Sans+Pro:wght@400&display=swap"
+          rel="stylesheet"
+        />
+        <title data-i18n="pageTitle">
+          AIT OUBELLI | Software engineer and data enthusiast.
+        </title>
+      </head>
+      <body>
+        <div class="maintenance-banner" id="maintenanceBanner">
+          <p data-i18n="maintenanceBanner">
+            This site is currently under maintenance. We'll be back soon!
           </p>
         </div>
-        <div class="about-me-illustration"></div>
-      </section>
-      <section id="education" class="education">
-        <h2 class="section__title">Education</h2>
-        <div class="education__list">
-          <!-- Education Item 1 -->
-          <div class="education__item">
-            <h3 class="education__degree">
-              Master Informatique spécialité Génie Logiciel
-            </h3>
-            <p class="education__school">
-              Université de Bordeaux, Bordeaux (33)
+        <aside class="sidebar">
+          <!-- Sidebar Header -->
+          <div class="sidebar-header">
+            <div class="hamburger dock-to-right">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="sidebar__avatar">
+              <img src="resources/pic.png" alt="User avatar" />
+            </div>
+            <h2 class="sidebar__name">AITOUBELLI</h2>
+            <p class="sidebar__title" data-i18n="sidebarTitle">
+              Software engineer
             </p>
-            <p class="education__years">2024-2026</p>
-            <p class="education__details">
-              Focusing on advanced software engineering principles, design
-              patterns, and large-scale system architecture.
-            </p>
-          </div>
-          <!-- Education Item 2 -->
-          <div class="education__item">
-            <h3 class="education__degree">Licence Informatique</h3>
-            <p class="education__school">
-              Université de Haute-Alsace, Mulhouse (68)
-            </p>
-            <p class="education__years">2023 - 2024</p>
-            <p class="education__details">
-              Studied core computer science concepts, including algorithms, data
-              structures, and programming paradigms.
-            </p>
-          </div>
-          <!-- Education Item 3 -->
-          <div class="education__item">
-            <h3 class="education__degree">Licence Informatique</h3>
-            <p class="education__school">
-              Université de Mohammed Chérif Messadia, Algérie
-            </p>
-            <p class="education__years">2015-2018</p>
-            <p class="education__details">
-              Completed foundational studies in computer science, covering
-              programming, databases, and networking.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="skills" class="skills">
-        <h2 class="section__title">Skills</h2>
-        <!-- Tabs Navigation -->
-        <div class="skills__tabs">
-          <button class="tab-link" id="all-tab" onclick="openCategory('all')">
-            All
-          </button>
-          <button class="tab-link" onclick="openCategory('webdev')">
-            Web Development
-          </button>
-          <button class="tab-link" onclick="openCategory('proglang')">
-            Programming Languages
-          </button>
-          <button class="tab-link" onclick="openCategory('tools')">
-            Tools & Technologies
-          </button>
-        </div>
-
-        <div class="skills__container">
-          <!-- Web Development (Frontend Technologies) -->
-          <div class="skills__category all webdev">
-            <h3 class="skills__category-title">Frontend Development</h3>
-            <ul class="skills__list">
-              <li class="skills__item">HTML</li>
-              <li class="skills__item">CSS</li>
-              <li class="skills__item">JavaScript</li>
-              <li class="skills__item">jQuery</li>
-              <li class="skills__item">React</li>
-              <li class="skills__item">Svelte</li>
-              <li class="skills__item">TypeScript</li>
-            </ul>
           </div>
 
-          <!-- Backend Technologies -->
-          <div class="skills__category all backend">
-            <h3 class="skills__category-title">Backend Development</h3>
-            <ul class="skills__list">
-              <li class="skills__item">PHP</li>
-              <li class="skills__item">Node.js</li>
-              <li class="skills__item">Express</li>
-            </ul>
-          </div>
+          <!-- Sidebar Menu -->
+          <nav class="sidebar-menu">
+            <a href="#home" class="sidebar-menu__item">
+              <i class="fas fa-home"></i> <span data-i18n="navHome">Home</span>
+            </a>
+            <a href="#about-me" class="sidebar-menu__item">
+              <i class="fas fa-user"></i>
+              <span data-i18n="navAboutMe">About Me</span>
+            </a>
+            <a href="#education" class="sidebar-menu__item">
+              <i class="fas fa-graduation-cap"></i>
+              <span data-i18n="navEducation">Education</span>
+            </a>
+            <a href="#skills" class="sidebar-menu__item">
+              <i class="fas fa-cogs"></i>
+              <span data-i18n="navSkills">Skills</span>
+            </a>
+            <a href="#experience" class="sidebar-menu__item">
+              <i class="fas fa-briefcase"></i>
+              <span data-i18n="navExperience">Experience</span>
+            </a>
+            <a href="#projects" class="sidebar-menu__item">
+              <i class="fas fa-project-diagram"></i>
+              <span data-i18n="navProjects">Projects</span>
+            </a>
+            <a href="#blog" class="sidebar-menu__item">
+              <i class="fas fa-blog"></i> <span data-i18n="navBlog">Blog</span>
+            </a>
+            <a href="#contact" class="sidebar-menu__item">
+              <i class="fas fa-envelope"></i>
+              <span data-i18n="navContactMe">Contact Me</span>
+            </a>
+          </nav>
 
-          <!-- Databases -->
-          <div class="skills__category all databases">
-            <h3 class="skills__category-title">Databases</h3>
-            <ul class="skills__list">
-              <li class="skills__item">MySQL</li>
-              <li class="skills__item">PostgreSQL</li>
-              <li class="skills__item">MongoDB</li>
-            </ul>
+          <!-- Sidebar Links -->
+          <div class="sidebar-links">
+            <a href="#" class="sidebar-links__link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="sidebar-links__link"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#" class="sidebar-links__link"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
           </div>
+        </aside>
+        <main class="content">
+          <header class="header">
+            <div class="toggle-mode">
+              <i class="fas fa-sun" id="toggle-button"></i>
+            </div>
+            <div class="language-switcher">
+              <button id="lang-en" class="lang-button active">EN</button>
+              <button id="lang-fr" class="lang-button">FR</button>
+            </div>
+          </header>
+          <section class="home-section" id="home">
+            <div id="particles-js"></div>
+            <div class="info">
+              <h1 class="welcome" data-i18n="homeWelcome">Hello & Welcome!</h1>
+              <p class="intro" data-i18n="homeIntro">
+                I'm <strong>AITOUBELLI Salah</strong>,
+              </p>
+              <p class="about" data-i18n="homeAbout">
+                As a dedicated
+                <strong id="typing-effect"></strong>
+                <br />
+                <br />
+                I blend front-end creativity with back-end functionality to
+                build seamless web solutions.
+              </p>
+              <br />
+              <p class="philosophy" data-i18n="homePhilosophy">
+                Driven by curiosity and innovation, I strive to transform ideas
+                into impactful web applications that enhance user experiences.
+              </p>
+              <button
+                id="cta-button"
+                class="cta-button"
+                onclick="openLink()"
+                data-i18n="homeCtaButton"
+              >
+                Download CV
+              </button>
+            </div>
+            <div class="home-illustration"></div>
+          </section>
+          <section id="about-me" class="about-me">
+            <div class="about-me__content">
+              <h1 class="home__title" data-i18n="aboutMeTitle">About Me</h1>
+              <p data-i18n="aboutMeP1">
+                Currently, I'm a third-year student at the University of Upper
+                Alsace, where I'm immersed in an engaging and challenging
+                academic environment. My journey through higher education has
+                been marked by a deep commitment to learning and personal
+                growth, both inside and outside the classroom.
+              </p>
+              <p data-i18n="aboutMeP2">
+                Throughout my time at the university, I've had the opportunity
+                to work on various academic and personal projects, ranging from
+                complex web applications using modern technologies to simple yet
+                insightful console games that reinforce fundamental programming
+                concepts. My diverse project portfolio, which includes front-end
+                applications, server-side solutions, and full-stack projects, is
+                a testament to my adaptability and eagerness to embrace new
+                challenges.
+              </p>
+              <p data-i18n="aboutMeP3">
+                Beyond my academic pursuits, I'm an active participant in the
+                tech community, regularly updating my GitHub with projects that
+                showcase my skills across different domains, including game
+                development with classic titles like Snake and Tetris in
+                JavaScript. This hands-on approach to learning has significantly
+                enhanced my problem-solving skills and has kept me at the
+                forefront of emerging technologies.
+              </p>
+              <p data-i18n="aboutMeP4">
+                I'm passionate about leveraging technology to create impactful
+                solutions and am always on the lookout for opportunities to
+                apply my knowledge in practical, real-world settings.
+              </p>
+            </div>
+            <div class="about-me-illustration"></div>
+          </section>
+          <section id="education" class="education">
+            <h2 class="section__title" data-i18n="educationTitle">Education</h2>
+            <div class="education__list">
+              <!-- Education Item 1 -->
+              <div class="education__item">
+                <h3 class="education__degree" data-i18n="edu1Degree">
+                  Master Informatique spécialité Génie Logiciel
+                </h3>
+                <p class="education__school" data-i18n="edu1School">
+                  Université de Bordeaux, Bordeaux (33)
+                </p>
+                <p class="education__years" data-i18n="edu1Years">2024-2026</p>
+                <p class="education__details" data-i18n="edu1Details">
+                  Focusing on advanced software engineering principles, design
+                  patterns, and large-scale system architecture.
+                </p>
+              </div>
+              <!-- Education Item 2 -->
+              <div class="education__item">
+                <h3 class="education__degree" data-i18n="edu2Degree">
+                  Licence Informatique
+                </h3>
+                <p class="education__school" data-i18n="edu2School">
+                  Université de Haute-Alsace, Mulhouse (68)
+                </p>
+                <p class="education__years" data-i18n="edu2Years">
+                  2023 - 2024
+                </p>
+                <p class="education__details" data-i18n="edu2Details">
+                  Studied core computer science concepts, including algorithms,
+                  data structures, and programming paradigms.
+                </p>
+              </div>
+              <!-- Education Item 3 -->
+              <div class="education__item">
+                <h3 class="education__degree" data-i18n="edu3Degree">
+                  Licence Informatique
+                </h3>
+                <p class="education__school" data-i18n="edu3School">
+                  Université de Mohammed Chérif Messadia, Algérie
+                </p>
+                <p class="education__years" data-i18n="edu3Years">2015-2018</p>
+                <p class="education__details" data-i18n="edu3Details">
+                  Completed foundational studies in computer science, covering
+                  programming, databases, and networking.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="skills" class="skills">
+            <h2 class="section__title" data-i18n="skillsTitle">Skills</h2>
+            <!-- Tabs Navigation -->
+            <div class="skills__tabs">
+              <button
+                class="tab-link"
+                id="all-tab"
+                onclick="openCategory('all')"
+                data-i18n="skillsTabAll"
+              >
+                All
+              </button>
+              <button
+                class="tab-link"
+                onclick="openCategory('webdev')"
+                data-i18n="skillsTabWebDev"
+              >
+                Web Development
+              </button>
+              <button
+                class="tab-link"
+                onclick="openCategory('proglang')"
+                data-i18n="skillsTabProgLang"
+              >
+                Programming Languages
+              </button>
+              <button
+                class="tab-link"
+                onclick="openCategory('tools')"
+                data-i18n="skillsTabTools"
+              >
+                Tools & Technologies
+              </button>
+            </div>
 
-          <!-- Programming Languages -->
-          <div class="skills__category all proglang">
-            <h3 class="skills__category-title">Programming Languages</h3>
-            <ul class="skills__list">
-              <li class="skills__item">Python</li>
-              <li class="skills__item">C++</li>
-              <li class="skills__item">Java</li>
-            </ul>
-          </div>
+            <div class="skills__container">
+              <!-- Web Development (Frontend Technologies) -->
+              <div class="skills__category all webdev">
+                <h3
+                  class="skills__category-title"
+                  data-i18n="skillsFrontendTitle"
+                >
+                  Frontend Development
+                </h3>
+                <ul class="skills__list">
+                  <li class="skills__item">HTML</li>
+                  <li class="skills__item">CSS</li>
+                  <li class="skills__item">JavaScript</li>
+                  <li class="skills__item">jQuery</li>
+                  <li class="skills__item">React</li>
+                  <li class="skills__item">Svelte</li>
+                  <li class="skills__item">TypeScript</li>
+                </ul>
+              </div>
 
-          <!-- Tools & Technologies -->
-          <div class="skills__category all tools">
-            <h3 class="skills__category-title">Tools & Technologies</h3>
-            <ul class="skills__list">
-              <li class="skills__item">Git</li>
-              <li class="skills__item">Linux</li>
-              <li class="skills__item">Google Cloud Platform</li>
-              <li class="skills__item">VS Code</li>
-              <li class="skills__item">Android Studio</li>
-              <li class="skills__item">Eclipse</li>
-              <li class="skills__item">PhpStorm</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="experience" class="experience">
-        <h2 class="section__title">Professional Experience</h2>
-        <div class="experience__list">
-          <!-- Experience Item 1 -->
-          <div class="experience__item">
-            <h3 class="experience__position">Computer Science Study Officer</h3>
-            <p class="experience__company">
-              MAATEC Insurance, April 2019 - 2020
-            </p>
-            <ul class="experience__details">
-              <li>
-                Technical assistance and problem resolution across various
-                offices.
-              </li>
-              <li>Repair of faulty equipment.</li>
-            </ul>
-          </div>
-          <!-- Experience Item 2 -->
-          <div class="experience__item">
-            <h3 class="experience__position">Software Testing Intern</h3>
-            <p class="experience__company">
-              ThagasteSoft Technologies, October 2018 - January 2019
-            </p>
-            <ul class="experience__details">
-              <li>Detailed test procedure documentation.</li>
-              <li>Design and implementation of test scenarios.</li>
-            </ul>
-          </div>
-          <!-- Add more experience items here if needed -->
-        </div>
-      </section>
-      <section id="projects" class="projects">
-        <h2 class="section__title">Projects</h2>
-        <div class="projects__container">
-          <!-- University Project: Graph Algo -->
-          <div class="project__item">
-            <h3 class="project__title">Graph Algo Web Application</h3>
-            <p class="project__description">
-              A complex web application using C++ for server-side processing and
-              HTML, CSS, JavaScript for the UI, implementing various graph
-              algorithms and data structures.
-            </p>
-          </div>
-          <!-- University Project: Chasse aux Fauves -->
-          <div class="project__item">
-            <h3 class="project__title">Chasse aux Fauves Console Game</h3>
-            <p class="project__description">
-              A console game developed in C++ applying OOP principles like
-              inheritance and polymorphism, enhancing my C++ skills and
-              understanding of OOP concepts.
-            </p>
-          </div>
-          <!-- Additional note about personal projects on GitHub -->
-          <p>
-            For more projects, including front-end applications, back-end
-            solutions, full-stack projects, and classic games like Snake and
-            Tetris in JavaScript, visit my
-            <a href="https://github.com/kit0ra"> GitHub portfolio</a>.
-          </p>
-        </div>
-      </section>
-      <section id="blog" class="blog">
-        <h2 class="section__title">Blog</h2>
-        <div class="blog__container">
-          <article class="blog__post">
-            <h3 class="blog__post-title">The Future of Web Development</h3>
-            <p class="blog__post-date">Posted on January 15, 2024</p>
-            <p class="blog__post-summary">
-              Exploring the latest trends and technologies shaping the future of
-              web development, from AI-driven design to progressive web
-              applications.
-            </p>
-            <a href="link-to-full-article" class="blog__post-readmore"
-              >Read More</a
+              <!-- Backend Technologies -->
+              <div class="skills__category all backend">
+                <h3
+                  class="skills__category-title"
+                  data-i18n="skillsBackendTitle"
+                >
+                  Backend Development
+                </h3>
+                <ul class="skills__list">
+                  <li class="skills__item">PHP</li>
+                  <li class="skills__item">Node.js</li>
+                  <li class="skills__item">Express</li>
+                </ul>
+              </div>
+
+              <!-- Databases -->
+              <div class="skills__category all databases">
+                <h3
+                  class="skills__category-title"
+                  data-i18n="skillsDatabasesTitle"
+                >
+                  Databases
+                </h3>
+                <ul class="skills__list">
+                  <li class="skills__item">MySQL</li>
+                  <li class="skills__item">PostgreSQL</li>
+                  <li class="skills__item">MongoDB</li>
+                </ul>
+              </div>
+
+              <!-- Programming Languages -->
+              <div class="skills__category all proglang">
+                <h3
+                  class="skills__category-title"
+                  data-i18n="skillsProgLangTitle"
+                >
+                  Programming Languages
+                </h3>
+                <ul class="skills__list">
+                  <li class="skills__item">Python</li>
+                  <li class="skills__item">C++</li>
+                  <li class="skills__item">Java</li>
+                </ul>
+              </div>
+
+              <!-- Tools & Technologies -->
+              <div class="skills__category all tools">
+                <h3 class="skills__category-title" data-i18n="skillsToolsTitle">
+                  Tools & Technologies
+                </h3>
+                <ul class="skills__list">
+                  <li class="skills__item">Git</li>
+                  <li class="skills__item">Linux</li>
+                  <li class="skills__item">Google Cloud Platform</li>
+                  <li class="skills__item">VS Code</li>
+                  <li class="skills__item">Android Studio</li>
+                  <li class="skills__item">Eclipse</li>
+                  <li class="skills__item">PhpStorm</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section id="experience" class="experience">
+            <h2 class="section__title" data-i18n="experienceTitle">
+              Professional Experience
+            </h2>
+            <div class="experience__list">
+              <!-- Experience Item 1 -->
+              <div class="experience__item">
+                <h3 class="experience__position" data-i18n="exp1Position">
+                  Computer Science Study Officer
+                </h3>
+                <p class="experience__company" data-i18n="exp1Company">
+                  MAATEC Insurance, April 2019 - 2020
+                </p>
+                <ul class="experience__details">
+                  <li data-i18n="exp1Detail1">
+                    Technical assistance and problem resolution across various
+                    offices.
+                  </li>
+                  <li data-i18n="exp1Detail2">Repair of faulty equipment.</li>
+                </ul>
+              </div>
+              <!-- Experience Item 2 -->
+              <div class="experience__item">
+                <h3 class="experience__position" data-i18n="exp2Position">
+                  Software Testing Intern
+                </h3>
+                <p class="experience__company" data-i18n="exp2Company">
+                  ThagasteSoft Technologies, October 2018 - January 2019
+                </p>
+                <ul class="experience__details">
+                  <li data-i18n="exp2Detail1">
+                    Detailed test procedure documentation.
+                  </li>
+                  <li data-i18n="exp2Detail2">
+                    Design and implementation of test scenarios.
+                  </li>
+                </ul>
+              </div>
+              <!-- Add more experience items here if needed -->
+            </div>
+          </section>
+          <section id="projects" class="projects">
+            <h2 class="section__title" data-i18n="projectsTitle">Projects</h2>
+            <div class="projects__container">
+              <!-- University Project: Graph Algo -->
+              <div class="project__item">
+                <h3 class="project__title" data-i18n="proj1Title">
+                  Graph Algo Web Application
+                </h3>
+                <p class="project__description" data-i18n="proj1Description">
+                  A complex web application using C++ for server-side processing
+                  and HTML, CSS, JavaScript for the UI, implementing various
+                  graph algorithms and data structures.
+                </p>
+              </div>
+              <!-- University Project: Chasse aux Fauves -->
+              <div class="project__item">
+                <h3 class="project__title" data-i18n="proj2Title">
+                  Chasse aux Fauves Console Game
+                </h3>
+                <p class="project__description" data-i18n="proj2Description">
+                  A console game developed in C++ applying OOP principles like
+                  inheritance and polymorphism, enhancing my C++ skills and
+                  understanding of OOP concepts.
+                </p>
+              </div>
+              <!-- Additional note about personal projects on GitHub -->
+              <p data-i18n="projectsGithubNote">
+                For more projects, including front-end applications, back-end
+                solutions, full-stack projects, and classic games like Snake and
+                Tetris in JavaScript, visit my
+                <a href="https://github.com/kit0ra"> GitHub portfolio</a>.
+              </p>
+            </div>
+          </section>
+          <section id="blog" class="blog">
+            <h2 class="section__title" data-i18n="blogTitle">Blog</h2>
+            <div class="blog__container">
+              <article class="blog__post">
+                <h3 class="blog__post-title" data-i18n="blog1Title">
+                  The Future of Web Development
+                </h3>
+                <p class="blog__post-date" data-i18n="blog1Date">
+                  Posted on January 15, 2024
+                </p>
+                <p class="blog__post-summary" data-i18n="blog1Summary">
+                  Exploring the latest trends and technologies shaping the
+                  future of web development, from AI-driven design to
+                  progressive web applications.
+                </p>
+                <a
+                  href="link-to-full-article"
+                  class="blog__post-readmore"
+                  data-i18n="blogReadMore"
+                >
+                  Read More
+                </a>
+              </article>
+              <article class="blog__post">
+                <h3 class="blog__post-title" data-i18n="blog2Title">
+                  Understanding JavaScript Asynchronicity
+                </h3>
+                <p class="blog__post-date" data-i18n="blog2Date">
+                  Posted on February 20, 2024
+                </p>
+                <p class="blog__post-summary" data-i18n="blog2Summary">
+                  A deep dive into asynchronous programming in JavaScript,
+                  covering callbacks, promises, and async/await syntax to manage
+                  asynchronous operations.
+                </p>
+                <a
+                  href="link-to-full-article"
+                  class="blog__post-readmore"
+                  data-i18n="blogReadMore"
+                >
+                  Read More
+                </a>
+              </article>
+              <!-- Add more blog posts here -->
+            </div>
+            <a href="blog.html" class="more-blogs" data-i18n="moreBlogs"
+              >More Blogs</a
             >
-          </article>
-          <article class="blog__post">
-            <h3 class="blog__post-title">
-              Understanding JavaScript Asynchronicity
-            </h3>
-            <p class="blog__post-date">Posted on February 20, 2024</p>
-            <p class="blog__post-summary">
-              A deep dive into asynchronous programming in JavaScript, covering
-              callbacks, promises, and async/await syntax to manage asynchronous
-              operations.
+          </section>
+          <section id="contact" class="contact">
+            <h2 class="section__title" data-i18n="contactTitle">Contact Me</h2>
+            <p class="contact__intro" data-i18n="contactIntro">
+              If you have any questions, project ideas, or just want to say
+              hello, feel free to get in touch with me.
             </p>
-            <a href="link-to-full-article" class="blog__post-readmore"
-              >Read More</a
-            >
-          </article>
-          <!-- Add more blog posts here -->
-        </div>
-        <a href="blog.html" class="more-blogs">More Blogs</a>
-      </section>
-      <section id="contact" class="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <p class="contact__intro">
-          If you have any questions, project ideas, or just want to say hello,
-          feel free to get in touch with me.
-        </p>
-        <div class="contact__details">
-          <p>
-            Email:
-            <a href="mailto:ait.medsalah@gmail.com">ait.medsalah@gmail.com</a>
-          </p>
-          <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/aitoubelli" target="_blank"
-              >aitoubelli</a
-            >
-          </p>
-          <!-- More contact options here if needed -->
-        </div>
-        <form action="endpoint" method="POST" class="contact__form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+            <div class="contact__details">
+              <p data-i18n="contactEmail">
+                Email:
+                <a href="mailto:ait.medsalah@gmail.com"
+                  >ait.medsalah@gmail.com</a
+                >
+              </p>
+              <p data-i18n="contactLinkedIn">
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/aitoubelli" target="_blank"
+                  >aitoubelli</a
+                >
+              </p>
+              <!-- More contact options here if needed -->
+            </div>
+            <form action="endpoint" method="POST" class="contact__form">
+              <label for="name" data-i18n="contactNameLabel">Name:</label>
+              <input type="text" id="name" name="name" required />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+              <label for="email" data-i18n="contactEmailLabel">Email:</label>
+              <input type="email" id="email" name="email" required />
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+              <label for="message" data-i18n="contactMessageLabel"
+                >Message:</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
 
-          <button type="submit" class="contact__submit">Send Message</button>
-        </form>
-      </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
+              <button
+                type="submit"
+                class="contact__submit"
+                data-i18n="contactSubmitButton"
+              >
+                Send Message
+              </button>
+            </form>
+          </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="script.js"></script>
+      </body>
+    </html>
   </body>
 </html>
