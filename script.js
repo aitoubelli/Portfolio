@@ -173,11 +173,11 @@ async function setLanguage(lang) {
   // Update typing effect phrase
   updateTypingEffectPhrase()
 
-  // Update active class for language buttons
-  document.querySelectorAll('.lang-button').forEach(button => {
-    button.classList.remove('active')
-  })
-  document.getElementById(`lang-${lang}`).classList.add('active')
+  // Update the selected option in the dropdown
+  const languageSelector = document.getElementById('language-selector')
+  if (languageSelector) {
+    languageSelector.value = lang
+  }
 }
 
 function updateTypingEffectPhrase() {
@@ -223,13 +223,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   typePhrase() // Start the typing effect after translations are loaded
 })
 
-// Event listeners for language buttons
-document
-  .getElementById('lang-en')
-  .addEventListener('click', () => setLanguage('en'))
-document
-  .getElementById('lang-fr')
-  .addEventListener('click', () => setLanguage('fr'))
+// Event listener for the language selector
+document.addEventListener('DOMContentLoaded', () => {
+  const languageSelector = document.getElementById('language-selector')
+  if (languageSelector) {
+    languageSelector.addEventListener('change', event => {
+      setLanguage(event.target.value)
+    })
+  }
+})
 
 // --------------------------------------------------------------
 function openCategory(categoryName) {

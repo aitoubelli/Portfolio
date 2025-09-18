@@ -275,7 +275,10 @@ h6 {
 
 .toggle-mode {
   padding: 1rem;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px; /* Space between the icon and the language selector */
   margin-right: 1rem;
 }
 
@@ -290,14 +293,12 @@ h6 {
 }
 
 .language-switcher {
-  display: flex;
-  gap: 10px;
-  padding: 1rem;
-  justify-content: flex-end;
-  margin-right: 1rem;
+  /* No longer needs display: flex or justify-content: flex-end as it's inside toggle-mode */
+  padding: 0; /* Remove padding as it's now handled by toggle-mode */
+  margin-right: 0; /* Remove margin-right as it's now handled by toggle-mode */
 }
 
-.lang-button {
+.lang-select {
   background-color: var(--primary-color);
   color: var(--text-color);
   border: none;
@@ -306,10 +307,17 @@ h6 {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  appearance: none; /* Remove default select styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%20viewBox%3D%220%200%20292.4%20292.4%22%3E%3Cpath%20fill%3D%22%23e0e0e0%22%20d%3D%22M287%20197.2L159.7%2069.8c-4.6-4.6-12-4.6-16.6%200L5.4%20197.2c-4.6%204.6-4.6%2012%200%2016.6l14.7%2014.7c4.6%204.6%2012%204.6%2016.6%200l118.5-118.5%20118.5%20118.5c4.6%204.6%2012%204.6%2016.6%200l14.7-14.7c4.6-4.6%204.6-12%200-16.6z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px auto;
+  padding-right: 30px; /* Make space for the arrow */
 }
 
-.lang-button:hover,
-.lang-button.active {
+.lang-select:hover {
   background-color: var(--accent-color);
 }
 
